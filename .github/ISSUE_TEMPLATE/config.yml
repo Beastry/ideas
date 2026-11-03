@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Beastry 主站 / Website
+    url: https://beastry.app
+    about: 产品展示与联系方式
+  - name: GitHub 组织
+    url: https://github.com/Beastry
+    about: 现有产品仓库

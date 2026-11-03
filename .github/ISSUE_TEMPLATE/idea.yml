@@ -1,0 +1,56 @@
+name: Idea
+description: Propose a Beastry product or feature idea
+title: "[Idea] "
+labels: ["idea", "构思"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        用一条 Issue 说清一个想法。One idea per Issue.
+  - type: input
+    id: name
+    attributes:
+      label: 名称 / Working name
+      description: 暂定名即可
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 要解决什么 / Problem
+      description: 谁在什么场景下难受？
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 大致方案 / Proposal
+      description: 功能范围、平台、参考产品（可选）
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 平台 / Platform
+      options:
+        - macOS
+        - iOS / iPadOS
+        - Web
+        - Cross-platform
+        - Unsure
+    validations:
+      required: true
+  - type: checkboxes
+    id: help
+    attributes:
+      label: 你愿意怎么参与 / How you can help
+      options:
+        - label: 讨论 / Discuss
+        - label: 设计 / Design
+        - label: 写代码 / Code
+        - label: 只是投个想法 / Just sharing
+  - type: textarea
+    id: notes
+    attributes:
+      label: 其他 / Notes
+      description: 链接、竞品、草图等
